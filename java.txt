@@ -1,0 +1,14 @@
+const countries = ["Nigeria", "Kenya", "Egypt", /* other country names */];
+const input = document.getElementById('countryInput');
+const scoreDisplay = document.getElementById('score');
+let score = 0;
+
+input.addEventListener('keyup', (event) => {
+  const guess = event.target.value.trim();
+  if (countries.includes(guess)) {
+    document.getElementById(guess).classList.add('correct');
+    score++;
+    scoreDisplay.textContent = score;
+    event.target.value = ''; // Clear input after correct guess
+  }
+});

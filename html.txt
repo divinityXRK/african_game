@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>African Countries Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Guess the African Countries</h1>
+  <input id="countryInput" placeholder="Type a country name">
+  <p>Score: <span id="score">0</span>/54</p>
+  <div id="mapContainer">
+    <!-- SVG Map of Africa (each country as a path with unique IDs) -->
+    <!-- Example for one country, repeat for each: -->
+    <svg id="africaMap">
+      <path id="Nigeria" d="..." fill="#ccc" />
+      <!-- Other countries' paths go here -->
+    </svg>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+#mapContainer {
+  max-width: 600px;
+  margin: auto;
+}
+path {
+  fill: #cccccc;
+  transition: fill 0.3s ease;
+}
+path.correct {
+  fill: green;
+}
